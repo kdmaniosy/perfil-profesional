@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica</title>
+    <style>
+        .container {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .form {
+            height: 300px;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            border-radius: 15px;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="form">
+            <div class="row">
+                <label for="">Date One</label>
+                <input type="text" id="text_one" onblur="salida()">
+            </div>
+            <div class="row">
+                <label for="">Date Two</label>
+                <input type="text" id="text_two" onblur="">
+            </div>
+            <div class="row">
+                <button onclick="calcular()">Calcular</button>
+            </div>
+            <div class="row">
+                <label for="" id="print"></label>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js.js"></script>
+    <script>
+        var number_on = document.getElementById("text_one").value;
+        var number_tw = document.getElementById("text_two").value;
+        function calcular(){
+            
+            
+            let rta = "La suma es: "+(parseInt(number_on) + parseInt(number_tw));
+            Swal.fire(rta);
+            //document.getElementById("print").innerText = rta;
+
+        }
+
+        function salida(){
+            var text_on = document.getElementById("text_one").value;
+            if (text_on.lenght <= 2) {
+                Swal.fire("Hay un campo vacío", "Por favor diligenciar", "error")
+            } else {
+                Swal.fire("Hay un campo lleno", "Por favor diligenciar", "error")
+            };
+        }
+    </script>
+</body>
+</html>
