@@ -212,3 +212,25 @@ form.addEventListener("submit", name_event => {
     }
     validation.innerText = info;
 })
+
+function load_page(){
+    document.getElementById("nombres").focus();
+    document.getElementById("apellidos").disabled = true;
+    let date = new date();
+    console.log(date.getMonth());
+    for (let i=0; i<array_mul.length; i++){
+        console.log(array_mul[i].name);
+    }
+
+}
+
+function validate(){
+    let nombre = document.getElementById("nombres")
+    console.log(nombres);
+    alert(nombres.split(" "));
+    if(nombre.length > 2){
+        document.getElementById("apellidos").disabled = false; 
+        document.getElementById("apellidos").focus();
+        document.getElementById("nombres").value = " ";
+    }
+}

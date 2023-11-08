@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendiendo JS</title>
 </head>
-<body >
+<body onload="load_page()">
 
     <!-- onload="load_page()" -->
 
@@ -25,7 +25,7 @@
 
     <form id="form_register">
         <label for="nombres">Nombres</label>
-        <input type="text" id="nombres" size="30" placeholder="Please enter your name">
+        <input type="text" id="nombres" size="30" placeholder="Please enter your name" onblur="validate()">
 
         <br>
 
