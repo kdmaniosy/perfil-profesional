@@ -5,7 +5,7 @@ console.log("Prueba de conexión");
 // const constantes
 const pi = 3.1416;
 const pu = 2.54;
-const name = "Wilder Andrés Duarte Neira";
+const name = "Karol Daniela Manios Yañez";
 
 // var para variables globales
 var days = 15;
@@ -27,7 +27,7 @@ console.log("15");
 // pantalla - body
 // document.write(name);
 document.getElementById("box_one").innerHTML = "<h1>Este</h1>"
-document.getElementById("box_two").innerText = "<h2>Wilder Duarte</h2>"
+document.getElementById("box_two").innerText = "<h2>Karol Manios</h2>"
 
 // *** Librerias ***
 
@@ -64,6 +64,10 @@ let array_mul = [
     {name:"C", last_name:"Duarte", age:321},
     {name:"D", last_name:"Duarte", age:351}
 ]
+
+for(let i = 0; i <= array_mul.length; i++){
+    alert(array_mul[i].name.concat(" " + array_mul[i].last_name))
+}
 
 // *** OPERADORES ***
 
@@ -217,20 +221,18 @@ function load_page(){
     document.getElementById("nombres").focus();
     document.getElementById("apellidos").disabled = true;
     let date = new date();
-    console.log(date.getMonth());
-    for (let i=0; i<array_mul.length; i++){
-        console.log(array_mul[i].name);
-    }
-
+    console.log(date.getSeconds());
+    
 }
 
 function validate(){
-    let nombre = document.getElementById("nombres")
-    console.log(nombres);
+    let nombres = document.getElementById("nombres").value;
     alert(nombres.split(" "));
     if(nombre.length > 2){
         document.getElementById("apellidos").disabled = false; 
         document.getElementById("apellidos").focus();
-        document.getElementById("nombres").value = " ";
+    }else{
+        document.getElementById("apellidos").disabled=true;
+        document.getElementById("nombres").focus();
     }
 }

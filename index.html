@@ -1,64 +1,217 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wilder Duarte</title>
-    <link rel="shortcut icon" href="icons/icon.png" type="image/x-icon">
+    <title>Karol Manios</title>
+    <link rel="shortcut icon" href="icons/h.png" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- front page -->
     <header class="person">
         <nav class="nav container">
             <div class="nav_logo">
-                <h2 class="nav_title">Wilder Duarte</h2>
+                <h2 class="nav_title">Karol Manios</h2>
             </div>
-            <ul class="nav_link nav_link--menu">
+            <!-- ul.nav_link.nav_link_menu>(li.nav_items>a.nav_links{Texto})*4 -->
+            <ul class="nav_link nav_link_menu">
+                <!-- <li class="nav_items">
+                    <a href="#" class="nav_links">Inicio</a>
+                </li> -->
                 <li class="nav_items">
-                    <a href="" class="nav_links">Texto</a>
+                    <a href="#about" class="nav_links">Acerca de</a>
                 </li>
                 <li class="nav_items">
-                    <a href="" class="nav_links">Texto</a>
+                    <a href="#contact" class="nav_links">Contacto</a>
                 </li>
                 <li class="nav_items">
-                    <a href="" class="nav_links">Texto</a>
+                    <a href="#references" class="nav_links">Referencias</a>
                 </li>
                 <li class="nav_items">
-                    <a href="" class="nav_links">Texto</a>
+                    <a href="#questions" class="nav_links">Preguntas</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#social_media" class="nav_links">Redes Sociales</a>
                 </li>
                 <img src="icons/exit.svg" alt="Icon Exit" class="nav_close">
             </ul>
+            <div class="nav_menu">
+                <img src="icons/menu.svg" alt="Icon Menu" class="nav_img">
+            </div>
         </nav>
         <section class="person_container container">
-            <h1 class="person_title">Wilder Andrés Duarte Neira</h1>
-            <p class="person_paragraph">Coach Profesional</p>
+            <h1 class="person_title">Karol Daniela Manios Yañez</h1>
+            <p class="person_paragraph">Estudiante universitaria</p>
             <a href="#" class="btn">Haz Click</a>
         </section>
     </header>
+
+    <!-- options -->
     <main>
-        <section class="container about">
-            <h2 class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit recusandae deserunt quidem ratione quo consequuntur culpa itaque atque, officia, aliquam maiores adipisci similique! Unde nemo adipisci molestias voluptates commodi harum!</h2>
-            <p class="about_paragraph">Lorem, ipsum.</p>
+        <section class="container about" id="about">
+            <h2 class="subtitle">Acerca de mi</h2>
+            <p class="about_paragraph">Mi nombre es Karol Manios, tengo 17 años y estudio ingeniería de sistemas en la universidad 
+                Francisco de Paula Santander, espero algún día convertirme en una programadora de gran nivel y ser excepcionalmente exitosa.
+            </p>
+
             <div class="about_main">
+                <!-- (article.about_icons>img.about_icon+h3.about_title+p.about_paragraph)*3 -->
                 <article class="about_icons">
-                    <img src="icons/exit.svg" alt="icon" class="about_icon">
-                    <h3 class="about_title">Lorem, ipsum.</h3>
-                    <p class="about_paragraph">Lorem, ipsum.</p>
+                    <img src="icons/menu.svg" alt="Icon" class="about_icon">
+                    <h3 class="about_title">Logros</h3>
+                    <p class="about_paragraph">He logrado completar de manera exitosa mis estudios completos hasta graduarme de bachillerato. Ahora estoy estudiante una carrera muy prometedora para mi futuro.</p>
                 </article>
                 <article class="about_icons">
-                    <img src="icons/exit.svg" alt="icon" class="about_icon">
-                    <h3 class="about_title">Lorem, ipsum.</h3>
-                    <p class="about_paragraph">Lorem, ipsum.</p>
+                    <img src="icons/menu.svg" alt="Icon" class="about_icon">
+                    <h3 class="about_title">Aspiraciones</h3>
+                    <p class="about_paragraph">Para mi futuro espero mucha prosperidad y poder triunfar en la vida laboral haciendo lo que me gusta también solucionando problemas del dia a dia para las demás personas.</p>
                 </article>
                 <article class="about_icons">
-                    <img src="icons/exit.svg" alt="icon" class="about_icon">
-                    <h3 class="about_title">Lorem, ipsum.</h3>
-                    <p class="about_paragraph">Lorem, ipsum.</p>
+                    <img src="icons/menu.svg" alt="Icon" class="about_icon">
+                    <h3 class="about_title">Capacidades</h3>
+                    <p class="about_paragraph">Considero que soy una persona que puede aprender de manera rápida y eficiente algo nuevo, por lo que siempre trato de mejorar en lo que hago y superarme a mí misma.</p>
                 </article>
             </div>
+        </section>
+        
+        <section class="options" id="contact">
+            <div class="options_container container">
+                <div class="options_texts">
+                    <h2 class="subtitle">Experiencia en la Universidad</h2>
+                    <p class="options_paragraph">Durante esta etapa de mi vida he podido experimentar muchas nuevas emociones, he conocido a personas nuevas
+                        con las que jamás pensé conectar, además de que he adquirido una gran cantidad de nuevo conocimiento que me he ayudado a crecer como persona
+                        y también como estudiante.
+                    </p>
+                </div>
+                <figure class="options_picture">
+                    <img src="img/WhatsApp Image 2023-11-27 at 11.34.27 PM.jpeg" alt="Imagen Options" class="options_img">
+                </figure>
+            </div>
+        </section>
 
+        <section class="testimony" id="references">
+            <div class="testimony_container container">
+                
+                <img src="icons/leftarrow.svg" alt="Icon Flecha" class="testimony_arrow" id="before">                
+                
+                <section class="testimony_body testimony_body--show" data-id="1">
+                    <div class="testimony_texts">
+                        <h2 class="subtitle">Familia
+                            <br>
+                            <span class="testimony_course">Parte fundamental</span>
+                        </h2>
+                        <p class="testimony__review">Mi familia ha sido una parte fundamental en mi vida, ya que me ha apoyado en mis decisiones.
+                        </p>
+                    </div>
+                    <figure class="testimony_picture">
+                        <img src="img/familia.jpeg" alt="Foto Persona" class="testimony_img">
+                    </figure>
+                </section>
+                
+                <section class="testimony_body" data-id="2">
+                    <div class="testimony_texts">
+                        <h2 class="subtitle">Relaciones personales
+                            <br>
+                            <span class="testimony_course">Inspiración</span>
+                        </h2>
+                        <p>Las personas con las que nos relacionamos son importantes ya que nos inspiran a ser mejores cada vez y nos ayudan en
+                            nuestras vidas diarias.
+                        </p>
+                    </div>
+                    <figure class="testimony_picture">
+                        <img src="img/amigos.jpeg" alt="Foto Persona" class="testimony_img">
+                    </figure>
+                </section>
+
+                <img src="icons/rightarrow.svg" alt="Icon Flecha" class="testimony_arrow" id="next">                
+
+            </div>
+        </section>
+
+        <section class="questions" id="questions">
+            <div class="container">
+                <h2 class="subtitle">Datos sobre mi</h2>
+                <p class="questions_paragraph">Una pequeña vista hacia la persona que soy.</p>
+
+                <section class="questions_container">
+                    <article class="questions_padding">
+                        <div class="questions_answer">
+                            <h3 class="questions_title">Cosas favoritas
+                                <span class="questions_arrow">
+                                    <img src="icons/arrow.svg" class="questions_img">
+                                </span>
+                            </h3>
+
+                            <p class="questions_show">Las cosas que más disfruto en mi vida son la música, pasar tiempo con las personas 
+                                a las que amo, me encantan mucho los animales y siempre trato de cuidarlos mucho. Amo mucho salir y conocer
+                                nuevos lugares bonitos y sobre todo disfrutarlos.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="questions_padding">
+                        <div class="questions_answer">
+                            <h3 class="questions_title">Opinión sobre mi carrera.
+                                <span class="questions_arrow">
+                                    <img src="icons/arrow.svg" class="questions_img">
+                                </span>
+                            </h3>
+
+                            <p class="questions_show">Me ha gustado mucho la carrera que elegí para mi vida, pero tengo que admitir que
+                                no es para nada fácil, cada vez enfrento nuevos retos con todas las cosas que necesito aprender y con todas 
+                                las que todavía desconozco, pero estoy feliz de haber escogido esto para mi vida.
+                            </p>
+                        </div>
+                    </article>
+                </section>
+            </div>
         </section>
     </main>
+
+    <footer class="footer" id="social_media">
+        <section class="footer_container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer_title">Karol Manios</h2>
+                <ul class="nav_link nav_link--footer">
+                    <!-- (li.nav_items>a.nav_links{Option})*4 -->
+                    <li class="nav_items">
+                        <a href="#" class="nav_links">Inicio</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="#" class="nav_links">Acerca de</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="#" class="nav_links">Valoración</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="#" class="nav_links">Opiniones</a>
+                    </li>
+                </ul>
+            </nav>
+            <form class="footer_form">
+                <h2 class="footer_info">Suscribete</h2>
+                <!-- .footer_inputs>input:email.footer_input+input:submit.footer_submit -->
+                <div class="footer_inputs">
+                    <input type="email" class="footer_input" placeholder="Escribe tu E-Mail">
+                    <input type="submit" value="Contáctanos" class="footer_submit">
+                </div>
+            </form>
+        </section>
+        <section class="footer_copy container">
+            <div class="footer_social">
+                <a href="#" class="footer_icon"><img src="icons/facebook.svg" alt="Icon Facebook" class="footer_img"></a>
+                <a href="#" class="footer_icon"><img src="icons/instagram.svg" alt="Icon Instagram" class="footer_img"></a>
+                <a href="#" class="footer_icon"><img src="icons/twitter.svg" alt="Icon Twitter" class="footer_img"></a>
+            </div>
+            <h3 class="footer_copyright">Derechos reservados &copy; Karol Manios</h3>
+        </section>
+    </footer>
+
+
+    <script src="js/slider.js"></script>
+    <script src="js/questions.js"></script>
 </body>
 </html>
